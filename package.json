@@ -1,5 +1,5 @@
 {
-  "name": "alpha-orm",
+  "name": "orm-alpha",
   "version": "1.2.013",
   "description": "An extraordinary database ORM like none yet",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alpha-orm/node-alpha-orm.git"
+    "url": "git+https://github.com/OdenigboGodfrey/node-alpha-orm.git"
   },
   "keywords": [
     "orm",
@@ -22,13 +22,14 @@
   "author": "Claret Nnamocha <devclareo@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alpha-orm/node-alpha-orm/issues"
+    "url": "https://github.com/OdenigboGodfrey/node-alpha-orm/issues"
   },
-  "homepage": "https://github.com/alpha-orm/node-alpha-orm#readme",
+  "homepage": "https://github.com/OdenigboGodfrey/node-alpha-orm#readme",
   "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.9",
     "bluebird": "^3.7.1",
     "mysql": "^2.17.1",
-    "pg": "^7.12.1",
-    "sqlite": "^3.0.3"
+    "pg": "^8.7.3",
+    "sqlite": "^4.0.23"
   }
 }
