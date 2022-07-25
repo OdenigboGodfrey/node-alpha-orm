@@ -1,6 +1,6 @@
 {
   "name": "orm-alpha",
-  "version": "1.2.013",
+  "version": "1.2.014",
   "description": "An extraordinary database ORM like none yet",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "@mapbox/node-pre-gyp": "^1.0.9",
     "bluebird": "^3.7.1",
     "mysql": "^2.17.1",
-    "pg": "^8.7.3",
+    "pg": "8.7.3",
     "sqlite": "^4.0.23"
   }
 }
