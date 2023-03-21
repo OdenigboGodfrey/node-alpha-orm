@@ -10,7 +10,11 @@ class PostgreSQLGenerator extends GeneratorInterface {
     static checkColumnUpdates(columns_db, columns_record, alpha_record) {
         let updated_columns = {}
         let existing = []
-        columns_db.forEach(col => {
+        let iteration_columns = columns_db;
+        if (iteration_columns.rows) {
+            iteration_columns = iteration_columns.rows;
+        }
+        iteration_columns.forEach(col => {
             if (columns_record.includes(col.Field)) {
                 existing.push(col.Field)
                 // if type is not supported

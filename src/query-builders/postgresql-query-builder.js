@@ -33,7 +33,7 @@ class PostgreSQLQueryBuilder {
         let sql = `ALTER TABLE ${this.SCHEMA}."${tablename}"`
         let columns = Object.keys(map)
         for (let column of columns) {
-            sql += `MODIFY COLUMN ${column} ${map[column]}`
+            sql += ` alter COLUMN ${column} type ${map[column]}`
             sql += column == columns[columns.length - 1] ? `;` : ','
         }
         return sql

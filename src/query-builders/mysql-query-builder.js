@@ -31,7 +31,7 @@ class MySQLQueryBuilder {
         let sql = `ALTER TABLE \`${tablename}\``
         let columns = Object.keys(map)
         for (let column of columns) {
-            sql += `MODIFY COLUMN \`${column}\` ${map[column]}`
+            sql += ` MODIFY COLUMN \`${column}\` ${map[column]}`
             sql += column == columns[columns.length - 1] ? `;` : ','
         }
         return sql
